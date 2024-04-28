@@ -1,0 +1,118 @@
+ body {  
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  background-image: url("https://i.postimg.cc/HnRVH0gz/pawel-czerwinski-IQHx-Lsy-Vg-M-unsplash.jpg");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+} 
+
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  height: 10vh;
+}
+
+.title {
+  color: #8f3c3c;
+  font-size: 50px;
+  font-weight: 750;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, rgb(10, 102, 36) , rgb(5, 74, 134));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 2px 5px 5px rgba(0,0,0,0.3), 
+    0px -4px 2px rgba(255,255,255,0.3);
+}
+
+
+
+
+
+
+.notes {
+  width: 75vw;
+  transition: 0.1s ;
+  background-color: #c36a2667;
+  border: 3px solid rgb(137, 184, 232);
+  margin: 20px 12.5vw;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  /* min-height: 75vh; */
+ 
+  padding: 15px 30px;
+
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   /* overflow: auto; */
+}
+/* 
+.export {
+  font-size: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+} */
+
+.button-9 {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #020203;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  /* height: 44px; */
+  line-height: 1.15;
+  
+  margin-bottom: 40px;
+  margin-left: 47%;
+  outline: none;
+  /* overflow: hidden; */
+  padding: 10px 20px;
+
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.button-9:disabled {
+  cursor: default;
+}
+
+.button-9:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+@media screen and (max-width: 1200px) {
+  .notes {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .notes {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .notes {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
